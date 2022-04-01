@@ -19,4 +19,4 @@ jobs:
     - name: Docker image
       run: docker build . --file Dockerfile --tag task-server/latest
     - name: Docker push
-      run: docker push ${{secrets.DOCKER_USERNAME}}/task-server/latest
+      run: docker push task-server/latest
