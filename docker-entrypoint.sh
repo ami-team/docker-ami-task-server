@@ -36,15 +36,10 @@ EOF
 
 ########################################################################################################################
 
-AMI_CLASSPATH=''
-
-for JAR_FILE in /AMITaskServer/lib/*.jar
-do
-  AMI_CLASSPATH=$AMI_CLASSPATH:$JAR_FILE
-done
+AMI_CLASSPATH=$(find /AMITaskServer/lib/ -name '*.jar' | xargs echo | tr ' ' ':')
 
 ########################################################################################################################
 
-java -Dfile.encoding=UTF-8 -Djava.awt.headless=true -Djava.security.egd=file:/dev/./urandom -Dami.conffile=/AMITaskServer/AMI.xml -classpath $AMI_CLASSPATH net.hep.ami.task.Main
+java -Dfile.encoding=UTF-8 -Djava.awt.headless=true -Djava.security.egd=file:/dev/./urandom -Dami.conffile=/AMITaskServer/AMI.xml -classpath "${AMI_CLASSPATH}" net.hep.ami.task.Main
 
 ########################################################################################################################
