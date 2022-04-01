@@ -20,8 +20,8 @@
 	<img src="http://ami.in2p3.fr/docs/images/logo_cern.png" alt="CERN" height="72" />
 </a>
 
-AMITaskServer
-=============
+AMITaskServer Docker Image
+==========================
 
 The ATLAS Metadata Interface Task Server (AMITaskServer) is a generic high level time-based job scheduler. It was originally developed for the A Toroidal LHC ApparatuS (ATLAS) experiment, one of the two general-purpose detectors at the Large Hadron Collider (LHC).
 
