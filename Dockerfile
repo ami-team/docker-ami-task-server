@@ -40,6 +40,6 @@ WORKDIR "/AMITaskServer"
 
 VOLUME ["/AMITaskServer/tasks/"]
 
-CMD ["/bin/sh", "/AMITaskServer/docker.run"]
+ENTRYPOINT ["/bin/sh", "/AMITaskServer/docker.run"]
 
 ########################################################################################################################
