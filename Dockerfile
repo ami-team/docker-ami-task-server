@@ -38,7 +38,7 @@ COPY docker-entrypoint.sh /AMITaskServer/docker-entrypoint.sh
 
 WORKDIR "/AMITaskServer"
 
-VOLUME ["/AMITaskServer/tasks/"]
+VOLUME ["/AMITaskServer/log/"]
 
 ENTRYPOINT ["/bin/sh", "/AMITaskServer/docker-entrypoint.sh"]
 
