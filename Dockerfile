@@ -32,14 +32,16 @@ RUN wget -O AMITaskServer-bundle.zip https://ami.in2p3.fr/download/AMITaskServer
 
 RUN unzip AMITaskServer-bundle.zip
 
+########################################################################################################################
+
 COPY docker-entrypoint.sh /AMITaskServer/docker-entrypoint.sh
+
+RUN chmod a+x /AMITaskServer/docker-entrypoint.sh
 
 ########################################################################################################################
 
 WORKDIR "/AMITaskServer"
 
-VOLUME ["/AMITaskServer/log/"]
-
-ENTRYPOINT ["/bin/sh", "/AMITaskServer/docker-entrypoint.sh"]
+ENTRYPOINT ["/AMITaskServer/docker-entrypoint.sh"]
 
 ########################################################################################################################
