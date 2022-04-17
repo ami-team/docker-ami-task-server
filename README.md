@@ -28,6 +28,21 @@ The ATLAS Metadata Interface Task Server (AMITaskServer) is a generic high level
 
 This is the official Docker image.
 
+Environment variables
+=====================
+
+* `TASK_SERVER_NAME`
+* `MQTT_URL`
+* `MQTT_USERNAME`
+* `MQTT_PASSWORD`
+* `JDBC_URL`
+* `JDBC_USERNAME`
+* `JDBC_PASSWORD`
+* `EXCLUSION_SERVER_URL`
+* `QUALITY_OF_SERVICE`
+* `MAX_NB_OF_RUNNING_TASKS`
+* `PRIORITY_PROBABILITY_RATIO`
+
 Developers
 ==========
 
