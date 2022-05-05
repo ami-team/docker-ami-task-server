@@ -28,15 +28,15 @@ ENV PRIORITY_PROBABILITY_FACTOR="2.0"
 
 ########################################################################################################################
 
-RUN wget -O AMITaskServer-bundle.zip https://ami.in2p3.fr/download/AMITaskServer-1.0.0-bundle.zip
+RUN ["wget", "-O", "AMITaskServer-bundle.zip", "https://ami.in2p3.fr/download/AMITaskServer-1.0.0-bundle.zip"]
 
-RUN unzip AMITaskServer-bundle.zip
+RUN ["unzip", "AMITaskServer-bundle.zip"]
 
 ########################################################################################################################
 
 COPY docker-entrypoint.sh /AMITaskServer/docker-entrypoint.sh
 
-RUN chmod a+x /AMITaskServer/docker-entrypoint.sh
+RUN ["chmod", "a+x", "/AMITaskServer/docker-entrypoint.sh"]
 
 ########################################################################################################################
 

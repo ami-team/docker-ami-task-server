@@ -2,7 +2,7 @@
 
 ########################################################################################################################
 
-if [[ -z ${TASK_SERVER_NAME} || -z ${MQTT_URL} || -z ${MQTT_USERNAME} || -z ${MQTT_PASSWORD} || -z ${JDBC_URL} || -z ${JDBC_USERNAME} || -z ${JDBC_PASSWORD} ]]
+if [ -z "${TASK_SERVER_NAME}" ] || [ -z "${MQTT_URL}" ] || [ -z "${MQTT_USERNAME}" ] || [ -z "${MQTT_PASSWORD}" ] || [ -z "${JDBC_URL}" ] || [ -z "${JDBC_USERNAME}" ] || [ -z "${JDBC_PASSWORD}" ]
 then
   echo 'Please specify environment variables: TASK_SERVER_NAME, MQTT_URL, MQTT_USERNAME, MQTT_PASSWORD, JDBC_URL, JDBC_USERNAME, JDBC_PASSWORD'
 
