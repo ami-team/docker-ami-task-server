@@ -24,7 +24,7 @@ ENV EXCLUSION_SERVER_URL=""
 
 ENV MAX_NB_OF_RUNNING_TASKS="10"
 
-ENV PRIORITY_PROBABILITY_FACTOR="2.0"
+ENV PRIORITY_PROBABILITY_RATIO="2.0"
 
 ########################################################################################################################
 
