@@ -38,10 +38,10 @@ Environment variables
 * `JDBC_URL`
 * `JDBC_USERNAME`
 * `JDBC_PASSWORD`
-* `EXCLUSION_SERVER_URL`
-* `QUALITY_OF_SERVICE`
-* `MAX_NB_OF_RUNNING_TASKS`
-* `PRIORITY_PROBABILITY_RATIO`
+* `EXCLUSION_SERVER_URL`<sup>opt</opt>
+* `QUALITY_OF_SERVICE`<sup>opt</opt>
+* `MAX_NB_OF_RUNNING_TASKS`<sup>opt</opt>
+* `PRIORITY_PROBABILITY_RATIO`<sup>opt</opt>
 
 Developers
 ==========
