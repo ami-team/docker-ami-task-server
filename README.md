@@ -43,6 +43,11 @@ Environment variables
 * `MAX_NB_OF_RUNNING_TASKS`<sup>opt</opt>
 * `PRIORITY_PROBABILITY_RATIO`<sup>opt</opt>
 
+Volume
+======
+
+Task scripts/programs must be located there: `/AMITaskServer/workspace`.
+
 Developers
 ==========
 

@@ -11,7 +11,7 @@ fi
 
 ########################################################################################################################
 
-cat > /AMITaskServer/workdir/AMI.xml << EOF
+cat > /AMITaskServer/workspace/AMI.xml << EOF
 <?xml version="1.0" encoding="ISO-8859-1"?>
 
 <properties>
@@ -40,6 +40,6 @@ AMI_CLASSPATH=$(find /AMITaskServer/lib/ -name '*.jar' | xargs echo | tr ' ' ':'
 
 ########################################################################################################################
 
-java -Dfile.encoding=UTF-8 -Djava.awt.headless=true -Djava.security.egd=file:/dev/./urandom -Dami.conffile=/AMITaskServer/workdir/AMI.xml -classpath "${AMI_CLASSPATH}" net.hep.ami.task.Main
+java -Dfile.encoding=UTF-8 -Djava.awt.headless=true -Djava.security.egd=file:/dev/./urandom -Dami.conffile=/AMITaskServer/workspace/AMI.xml -classpath "${AMI_CLASSPATH}" net.hep.ami.task.Main
 
 ########################################################################################################################

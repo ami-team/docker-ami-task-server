@@ -32,6 +32,8 @@ RUN ["wget", "-O", "AMITaskServer-bundle.zip", "https://ami.in2p3.fr/download/AM
 
 RUN ["unzip", "AMITaskServer-bundle.zip"]
 
+RUN ["rm", "-fr", "/AMITaskServer/log"]
+
 ########################################################################################################################
 
 COPY docker-entrypoint.sh /AMITaskServer/docker-entrypoint.sh
@@ -40,7 +42,7 @@ RUN ["chmod", "a+x", "/AMITaskServer/docker-entrypoint.sh"]
 
 ########################################################################################################################
 
-VOLUME "/AMITaskServer/workdir"
+VOLUME "/AMITaskServer/workspace"
 
 ########################################################################################################################
 
