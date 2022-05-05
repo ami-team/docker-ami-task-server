@@ -38,11 +38,15 @@ COPY docker-entrypoint.sh /AMITaskServer/docker-entrypoint.sh
 
 RUN ["chmod", "a+x", "/AMITaskServer/docker-entrypoint.sh"]
 
-RUN ["touch", "/AMITaskServer/AMI.xml"]
+########################################################################################################################
+
+VOLUME "/AMITaskServer/workdir"
 
 ########################################################################################################################
 
 WORKDIR "/AMITaskServer"
+
+########################################################################################################################
 
 ENTRYPOINT ["/AMITaskServer/docker-entrypoint.sh"]
 
