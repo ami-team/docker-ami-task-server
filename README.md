@@ -46,7 +46,7 @@ Environment variables
 Volume
 ======
 
-Task scripts/programs must be located there: `/AMITaskServer/workspace`.
+Task scripts/programs must be located there: `/AMITaskServer/workspace/`.
 
 Developers
 ==========

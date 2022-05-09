@@ -27,6 +27,7 @@ cat > /AMITaskServer/workspace/AMI.xml << EOF
 
 	<property name="exclusion_server_url"><![CDATA[${EXCLUSION_SERVER_URL}]]></property>
 
+	<property name="cleanup_time"><![CDATA[${CLEANUP_TIME}]]></property>
 	<property name="quality_of_service"><![CDATA[${QUALITY_OF_SERVICE}]]></property>
 	<property name="max_nb_of_running_tasks"><![CDATA[${MAX_NB_OF_RUNNING_TASKS}]]></property>
 	<property name="priority_probability_ratio"><![CDATA[${PRIORITY_PROBABILITY_RATIO}]]></property>
