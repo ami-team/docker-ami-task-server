@@ -16,5 +16,5 @@
     <property name="cleanup_time"><![CDATA[${ami.cleanup_time}]]></property>
     <property name="quality_of_service"><![CDATA[${ami.quality_of_service}]]></property>
     <property name="max_nb_of_running_tasks"><![CDATA[${ami.max_nb_of_running_tasks}]]></property>
-    <property name="max_nb_of_running_tasks"><![CDATA[${ami.max_nb_of_running_tasks}]]></property>
+    <property name="priority_probability_ratio"><![CDATA[${ami.priority_probability_ratio}]]></property>
 </properties>
