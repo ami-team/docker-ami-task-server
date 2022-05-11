@@ -31,17 +31,18 @@ This is the official Docker image.
 Environment variables
 =====================
 
-* `TASK_SERVER_NAME`
+* `SERVER_NAME`
 * `MQTT_URL`
 * `MQTT_USERNAME`
 * `MQTT_PASSWORD`
 * `JDBC_URL`
 * `JDBC_USERNAME`
 * `JDBC_PASSWORD`
-* `EXCLUSION_SERVER_URL`<sup>opt</opt>
-* `QUALITY_OF_SERVICE`<sup>opt</opt>
-* `MAX_NB_OF_RUNNING_TASKS`<sup>opt</opt>
-* `PRIORITY_PROBABILITY_RATIO`<sup>opt</opt>
+* `EXCLUSION_SERVER_URL`<sup>opt, default: <i>empty</i></opt>
+* `CLEANUP_TIME`<sup>opt, default: 172800</opt>
+* `QUALITY_OF_SERVICE`<sup>opt, default: 0</opt>
+* `MAX_NB_OF_RUNNING_TASKS`<sup>opt, default: 10</opt>
+* `PRIORITY_PROBABILITY_RATIO`<sup>opt, default: 2.0</opt>
 
 Volume
 ======

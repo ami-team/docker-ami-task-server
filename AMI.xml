@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<properties>
+    <property name="server_name"><![CDATA[${ami.server_name}]]></property>
+
+    <property name="mqtt_url"><![CDATA[${ami.mqtt_url}]]></property>
+    <property name="mqtt_username"><![CDATA[${ami.mqtt_username}]]></property>
+    <property name="mqtt_password"><![CDATA[${ami.mqtt_password}]]></property>
+
+    <property name="jdbc_url"><![CDATA[${ami.jdbc_url}]]></property>
+    <property name="jdbc_username"><![CDATA[${ami.jdbc_username}]]></property>
+    <property name="jdbc_password"><![CDATA[${ami.jdbc_password}]]></property>
+
+    <property name="exclusion_server_url"><![CDATA[${ami.exclusion_server_url}]]></property>
+
+    <property name="cleanup_time"><![CDATA[${ami.cleanup_time}]]></property>
+    <property name="quality_of_service"><![CDATA[${ami.quality_of_service}]]></property>
+    <property name="max_nb_of_running_tasks"><![CDATA[${ami.max_nb_of_running_tasks}]]></property>
+    <property name="max_nb_of_running_tasks"><![CDATA[${ami.max_nb_of_running_tasks}]]></property>
+</properties>

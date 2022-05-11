@@ -10,7 +10,7 @@ LABEL description="AMI Task Server"
 
 ########################################################################################################################
 
-ENV TASK_SERVER_NAME=""
+ENV SERVER_NAME=""
 
 ENV MQTT_URL=""
 ENV MQTT_USERNAME=""
@@ -33,24 +33,34 @@ RUN ["wget", "-O", "AMITaskServer-bundle.zip", "https://ami.in2p3.fr/download/AM
 
 RUN ["unzip", "AMITaskServer-bundle.zip"]
 
-RUN ["rm", "-fr", "/AMITaskServer/log"]
+RUN ["rm", "AMITaskServer-bundle.zip"]
 
 ########################################################################################################################
 
-COPY docker-entrypoint.sh /AMITaskServer/docker-entrypoint.sh
+RUN ["mkdir", "/AMITaskServer/workspace/"]
 
-RUN ["chmod", "a+x", "/AMITaskServer/docker-entrypoint.sh"]
-
-########################################################################################################################
-
-VOLUME "/AMITaskServer/workspace"
+RUN ["rmdir", "/AMITaskServer/log/"]
 
 ########################################################################################################################
 
-WORKDIR "/AMITaskServer"
+COPY docker-entrypoint.sh /docker-entrypoint.sh
+
+RUN ["chmod", "a+x", "/docker-entrypoint.sh"]
 
 ########################################################################################################################
 
-ENTRYPOINT ["/AMITaskServer/docker-entrypoint.sh"]
+COPY AMI.xml /AMITaskServer/workspace/
+
+########################################################################################################################
+
+VOLUME /AMITaskServer/workspace/
+
+########################################################################################################################
+
+WORKDIR /AMITaskServer
+
+########################################################################################################################
+
+ENTRYPOINT ["/docker-entrypoint.sh"]
 
 ########################################################################################################################
