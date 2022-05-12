@@ -2,11 +2,9 @@
 
 ########################################################################################################################
 
-if [ -z "${SERVER_NAME}" ] || [ -z "${MQTT_URL}" ] || [ -z "${MQTT_USERNAME}" ] || [ -z "${MQTT_PASSWORD}" ] || [ -z "${JDBC_URL}" ] || [ -z "${JDBC_USERNAME}" ] || [ -z "${JDBC_PASSWORD}" ]
+if [ ! -f /AMITaskServer/workspace/AMI.xml ]
 then
-  echo 'Please specify environment variables: SERVER_NAME, MQTT_URL, MQTT_USERNAME, MQTT_PASSWORD, JDBC_URL, JDBC_USERNAME, JDBC_PASSWORD'
-
-  exit 1
+  cp /AMITaskServer/AMI.xml.orig /AMITaskServer/workspace/AMI.xml
 fi
 
 ########################################################################################################################
