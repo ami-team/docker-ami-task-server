@@ -29,6 +29,11 @@ ENV PRIORITY_PROBABILITY_RATIO="2.0"
 
 ########################################################################################################################
 
+RUN ["apk", "add", "bash"]
+RUN ["apk", "add", "python3"]
+
+########################################################################################################################
+
 RUN ["wget", "-O", "AMITaskServer-bundle.zip", "https://ami.in2p3.fr/download/AMITaskServer-1.0.0-bundle.zip"]
 
 RUN ["unzip", "AMITaskServer-bundle.zip"]
