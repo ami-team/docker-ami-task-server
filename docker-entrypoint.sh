@@ -14,7 +14,7 @@ AMI_CLASSPATH=$(find /AMITaskServer/lib/ -name '*.jar' | xargs echo | tr ' ' ':'
 ########################################################################################################################
 
 java \
--server \
+-server -Dfile.encoding=UTF-8 -Djava.awt.headless=true -Djava.security.egd=file:/dev/./urandom \
 \
 -Dami.server_name="${SERVER_NAME}" \
 \
@@ -34,8 +34,6 @@ java \
 -Dami.priority_probability_ratio="${PRIORITY_PROBABILITY_RATIO}" \
 \
 -Dami.conf_file=/AMITaskServer/workspace/AMI.xml \
-\
--Dfile.encoding=UTF-8 -Djava.awt.headless=true -Djava.security.egd=file:/dev/./urandom \
 \
 -classpath "${AMI_CLASSPATH}" \
 \
