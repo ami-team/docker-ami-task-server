@@ -28,7 +28,8 @@ java \
 \
 -Dami.exclusion_server_url="${EXCLUSION_SERVER_URL}" \
 \
--Dami.cleanup_time="${CLEANUP_TIME}" \
+-Dami.ping_period="${PING_PERIOD}" \
+-Dami.cleanup_period="${CLEANUP_PERIOD}" \
 -Dami.quality_of_service="${QUALITY_OF_SERVICE}" \
 -Dami.max_nb_of_running_tasks="${MAX_NB_OF_RUNNING_TASKS}" \
 -Dami.priority_probability_ratio="${PRIORITY_PROBABILITY_RATIO}" \
