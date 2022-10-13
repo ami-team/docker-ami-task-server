@@ -39,7 +39,8 @@ Environment variables
 * `JDBC_USERNAME`
 * `JDBC_PASSWORD`
 * `EXCLUSION_SERVER_URL`<sup>opt, default: <i>empty</i></opt>
-* `CLEANUP_TIME`<sup>opt, default: 172800</opt>
+* `PING_PERIOD`<sup>opt, default: 10</opt>
+* `CLEANUP_PERIOD`<sup>opt, default: 172800</opt>
 * `QUALITY_OF_SERVICE`<sup>opt, default: 0</opt>
 * `MAX_NB_OF_RUNNING_TASKS`<sup>opt, default: 10</opt>
 * `PRIORITY_PROBABILITY_RATIO`<sup>opt, default: 2.0</opt>
