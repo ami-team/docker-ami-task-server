@@ -44,7 +44,7 @@ RUN ["rm", "AMITaskServer-bundle.zip"]
 
 RUN ["mkdir", "/AMITaskServer/workspace/"]
 
-RUN ["rmdir", "/AMITaskServer/log/"]
+RUN ["rmdir", "/AMITaskServer/logs/"]
 
 ########################################################################################################################
 
