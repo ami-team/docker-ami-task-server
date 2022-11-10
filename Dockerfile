@@ -42,6 +42,10 @@ RUN ["rm", "AMITaskServer-bundle.zip"]
 
 ########################################################################################################################
 
+RUN ["mv", "/AMITaskServer/tasks/java_stub.sh", "/AMITaskServer/java_stub.sh.orig"]
+
+########################################################################################################################
+
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 
 RUN ["chmod", "a+x", "/docker-entrypoint.sh"]
