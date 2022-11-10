@@ -45,8 +45,8 @@ Environment variables
 * `MAX_NB_OF_RUNNING_TASKS`<sup>opt, default: 10</opt>
 * `PRIORITY_PROBABILITY_RATIO`<sup>opt, default: 2.0</opt>
 
-Volume
-======
+Volumes
+=======
 
 Logs are there: `/AMITaskServer/logs/`.
 
