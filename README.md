@@ -39,7 +39,7 @@ Environment variables
 * `JDBC_USERNAME`
 * `JDBC_PASSWORD`
 * `EXCLUSION_SERVER_URL`<sup>opt, default: <i>empty</i></opt>
-* `PING_PERIOD`<sup>opt, default: 10</opt>
+* `PING_PERIOD`<sup>opt, default: 30</opt>
 * `CLEANUP_PERIOD`<sup>opt, default: 172800</opt>
 * `QUALITY_OF_SERVICE`<sup>opt, default: 0</opt>
 * `MAX_NB_OF_RUNNING_TASKS`<sup>opt, default: 10</opt>
@@ -48,7 +48,9 @@ Environment variables
 Volume
 ======
 
-Task scripts/programs must be located there: `/AMITaskServer/workspace/`.
+Logs are there: `/AMITaskServer/logs/`.
+
+Tasks are there: `/AMITaskServer/tasks/`.
 
 Developers
 ==========
