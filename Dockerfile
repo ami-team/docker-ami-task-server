@@ -34,7 +34,7 @@ RUN ["apk", "add", "--update", "--no-cache", "bash", "python3"]
 
 ########################################################################################################################
 
-RUN ["wget", "-O", "AMITaskServer-bundle.zip", "https://ami.in2p3.fr/download/AMITaskServer-1.0.0-bundle.zip"]
+RUN ["wget", "-O", "AMITaskServer-bundle.zip", "https://repo.ami-ecosystem.in2p3.fr/releases/net/hep/ami/AMITaskServer/1.0.0/AMITaskServer-1.0.0-bundle.zip"]
 
 RUN ["unzip", "AMITaskServer-bundle.zip"]
 
